@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Eventos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-grid class="ftc-grid">
+    <ion-row>
+      <ion-col col-12 col-md-4 *ngFor="let event of events">
+        <ion-card class="ftc-card ftc-center">
+          <img src="{{ event.photo }}">
+          <button ion-button small class="ftc-center ftc-button-item" (click)="goToEventDetail(event)">Ver Mais</button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

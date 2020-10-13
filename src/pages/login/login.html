@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ftc-panel">
+    <p>Não possui conta? <a (click)="goToSignUp()">Clique aqui</a> para criar uma.</p>
+
+    <ion-item class="ftc-item-background-color">
+      <ion-label>Manter-se logado?</ion-label>
+      <ion-checkbox [(ngModel)]="keepLogged"></ion-checkbox>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="email" maxlength="100" placeholder="Informe seu email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="password" maxlength="20" placeholder="Informe sua senha" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    
+    <div><button ion-button full class="ftc-center ftc-button" (click)="loginEmail()">Entrar</button></div>
+
+    <div class="ftc-divider" style="margin-top: 10px; margin-bottom: 10px;"></div>
+
+    <ion-grid class="ftc-grid">
+      <ion-row>
+          <ion-col col-6 class="ftc-facebook-button">
+            <button ion-button icon-start full class="ftc-social-button ftc-center" (click)="loginFacebook()">
+              <ion-icon name="logo-facebook"></ion-icon>
+              Facebook
+            </button>
+          </ion-col>
+          <ion-col col-6 class="ftc-google-button">
+            <button ion-button icon-start full class="ftc-social-button ftc-center" (click)="loginGoogle()">
+              <ion-icon name="logo-googleplus"></ion-icon>
+              Google
+            </button>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <p>Esqueceu sua senha? <a (click)="goToRecoverPassword()">Clique aqui</a> para criar uma nova.</p>
+  </div>
+
+</ion-content>

@@ -1,0 +1,27 @@
+page-events {
+    .ftc-card {
+        background-color: transparent;
+        border-radius: 20px;
+        width: 100%;
+        margin: 0px 0px 10px 0px !important;
+        box-shadow: 0px 0px 8px 4px rgba(255, 0, 0, 0.4);
+    }
+
+    .ftc-card img {
+        height: 250px;
+    }
+
+    .ftc-grid {
+        padding: 10px 10px;
+    }
+
+    .ftc-button-item {
+        @extend .ftc-button;
+        border-radius: 20px !important;
+        padding: 0px 20px;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

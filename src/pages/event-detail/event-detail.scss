@@ -1,0 +1,86 @@
+page-event-detail {
+    .header img {
+        border-radius: 0px 0px 30px 30px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .header p {
+        @extend .ftc-font;
+        color: white;
+        padding: 10px 10px;
+        background: rgba(0, 0, 0, 0.7);
+        text-shadow: 1px 1px 0px black;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        position: absolute;
+        bottom: 4%;
+        left: 2%;
+        margin: 0px;
+        width: 95%;
+        border-radius: 20px;
+    }
+
+    .toolbar {
+        position: absolute;
+        top: 0;
+    }
+
+    .grid {
+        padding: 0px;
+    }
+
+    .grid .col {
+        padding: 0px;
+    }
+
+    .ftc-card {
+        background-color: transparent;
+        margin-top: 0px;
+        box-shadow: none;
+    }
+
+    .ftc-card .card-content {
+        padding: 0px;
+    }
+
+    .ftc-card .card-content div {
+        color: white;
+        text-align: justify;
+        padding: 5px 10px;
+        font-weight: 100;
+        margin: 0px;
+    }
+
+    .ftc-card .card-content div a {
+        @extend .ftc-primary-color;
+    }
+
+    .button {
+        min-height: 5.3rem;
+        font-size: 1.8rem;
+        color: white !important;
+    }
+
+    .button div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .button div span {
+        padding-top: 10px;
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+
+    .bar-buttons button {
+        background: transparent;
+    }
+
+    .bar-buttons button .icon {
+        color: white;
+        font-size: 2.5rem;
+        text-shadow: 1px 1px 0px black;
+    }
+}

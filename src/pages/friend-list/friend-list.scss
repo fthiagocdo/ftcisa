@@ -1,0 +1,36 @@
+page-friend-list {
+    .header img {
+        border-radius: 0px 0px 30px 30px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .header p {
+        @extend .ftc-font;
+        color: white;
+        padding: 10px 10px;
+        background: rgba(0, 0, 0, 0.7);
+        text-shadow: 1px 1px 0px black;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        position: absolute;
+        bottom: 4%;
+        left: 2%;
+        margin: 0px;
+        width: 95%;
+        border-radius: 20px;
+    }
+
+    .toolbar {
+        position: absolute;
+        top: 0;
+    } 
+
+    .description {
+        color: white;
+        text-align: justify;
+        padding: 0px 5px 15px 5px;
+        font-weight: 100;
+        margin: 0px;
+    }
+}

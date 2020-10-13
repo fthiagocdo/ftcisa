@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cadastre-se</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ftc-panel">
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="email" maxlength="100" placeholder="Informe seu nome e sobrenome" [(ngModel)]="name"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="email" maxlength="100" placeholder="Informe seu email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="password" maxlength="20" placeholder="Informe sua senha" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="password" maxlength="20" placeholder="Repita sua senha" [(ngModel)]="confirmPassword"></ion-input>
+    </ion-item>
+
+    <div><button ion-button full class="ftc-center ftc-button" (click)="signUp()">Confirme</button></div>
+
+  </div>
+
+</ion-content>

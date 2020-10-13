@@ -1,16 +1,301 @@
-// http://ionicframework.com/docs/theming/
+.ftc-font {
+    font-size: 2.5rem;
+    font-family: "PermanentMarker-Regular" !important;
+    font-weight: normal;
+  } 
 
+.content {
+    background: url('../assets/imgs/gandaia-bg.png');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+.ftc-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ftc-button {
+    @extend .ftc-primary-background;
+    border-radius: 10px !important;
+}
+
+.ftc-divider {
+    @extend .ftc-primary-background;
+    height: 1px;
+    overflow: hidden;
+}
+
+.header-degrade{
+    background: #e4341c;
+    color: white;
+    font-size: 20px;
+}
+
+.header-degrade p {
+    margin: 0px;
+}
+
+.ftc-circle-pic{
+    width: 100px;
+    height: 100px;
+    background: white;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.no-border div{
+    @extend .ftc-font;
+    color: #e4341c;
+    border: 0px !important;
+}
+
+.no-border .icon{
+    color: #e4341c !important;
+}
+
+//------------- COLORS -------------------
+.ftc-primary-color {
+    color: #e4341c !important;
+}
+
+.ftc-primary-background {
+    background-color: #e4341c !important;
+}
+
+.facebook {
+    background-color: #3B5998;
+}   
+
+.google {
+    background-color: #DD4B39;
+}  
+
+//------------- TOOLBAR -------------------
+.header::after {
+    background: none;
+}
+
+.toolbar-background {
+    background: transparent;
+}
+
+.toolbar-title {
+    @extend .ftc-font;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+.bar-button-menutoggle {
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+.back-button-icon {
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+//------------- INPUTS -------------------
+.ftc-item-background-color {
+    background-color: transparent;
+}
+
+.checkbox-icon {
+    border-color: white !important;
+    background: transparent !important;
+}
+
+.checkbox-icon .checkbox-checked {
+    background: transparent !important;
+}
+
+.item-checkbox {
+    padding-left: 5px !important;
+}
+
+.item-checkbox .checkbox {
+    margin: 9px 9px 9px 4px !important;
+}
+
+.item-checkbox .label {
+    color: white !important;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.item-checkbox .item-inner {
+    border: none !important;
+}
+
+.ftc-input-text {
+    padding: 0px 0px 20px 0px;
+}
+
+.ftc-input-text .item-inner {
+    border-radius: 10px !important;
+    background-color: transparent !important;
+    border: 1px solid #e4341c !important;
+}
+
+.ftc-input-text .text-input {
+    @extend .ftc-primary-color;
+}
+
+.ftc-input-text .select {
+    width: 100%;
+    max-width: 100%;
+}
+
+.ftc-input-text .select-text {
+    color: grey;
+}
+
+.ftc-input-text .select-icon-inner {
+    @extend .ftc-primary-color;
+}
+
+.ftc-input-text .datetime {
+    @extend .ftc-primary-color;
+}
+
+.item-input-has-value .item-inner {
+    box-shadow: 0px 0px 0px 0px rgba(228,52,28,0) !important;
+}
+
+.input-has-focus .item-inner {
+    box-shadow: 0px 10px 10px -8px #e4341c, 11px 24px 15px -3px rgba(26,113,178,0) !important;
+}
+
+.text-input::-moz-placeholder {
+    color: white;
+}
+
+.text-input:-ms-input-placeholder {
+    color: white;
+}
+
+.text-input::-webkit-input-placeholder {
+    color: white;
+}
+
+.datetime .datetime-placeholder {
+    color: white !important;
+}
+
+/*----------- Alert Popup -----------*/
+.ftc-info-color {
+    color: red !important;
+}
+
+.ftc-info-color .alert-title {
+    color: black !important;
+}
+
+.ftc-error-color .alert-title{
+    color: black !important;
+}
+
+.alert-wrapper {
+    border-radius: 20px !important;
+}
+
+.alert-message {
+    text-align: justify;
+}
+
+.alert-title {
+    text-align: justify;
+}
+
+.ftc-alert-info-button{
+    color: white !important;
+    background-color: red !important; 
+    border-radius: 10px !important;
+    width: 100px;
+}
+
+.ftc-alert-error-button{
+    color: white !important;
+    background-color: red !important; 
+    border-radius: 10px !important;
+    width: 100px;
+}
+
+.ftc-yes-button{
+    color: white !important;
+    background-color: green !important; 
+    border-radius: 10px !important;
+    width: 60px;
+}
+
+.ftc-no-button{
+    color: white !important;
+    background-color: red !important;
+    border-radius: 10px !important;
+    width: 60px;
+}
+
+.ftc-modal-button .button-inner{
+    justify-content: center !important;
+}
+
+/*----------- Modal Popup -----------*/
+
+ion-modal.my-popup {
+    @media (min-height: 500px) {
+      ion-backdrop {
+        visibility: visible;
+      }
+    }
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $z-index-overlay;
+  
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+  
+    contain: strict;
+    .modal-wrapper {
+      &,
+      .ion-page,
+      .ion-page .content,
+      .ion-page .content .scroll-content {
+        contain: content;
+        position: relative;
+        top: auto;
+        left: auto;
+      }
+  
+      z-index: $z-index-overlay-wrapper;
+      display: flex;
+      overflow: hidden;
+  
+      flex-direction: column;
+  
+      min-width: 90%;
+      max-height: $alert-max-height;
+  
+      opacity: 0;
+  
+      height: auto;
+      max-width: $alert-md-max-width;
+      border-radius: 20px;
+      background-color: $alert-md-background-color;
+      box-shadow: $alert-md-box-shadow;
+    }
+  }
+
+//Corrigindo bug ao clicar num input
+.scroll-content {
+    padding-bottom: 0px !important;
+}

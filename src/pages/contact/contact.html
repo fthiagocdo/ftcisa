@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Contato</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ftc-panel">
+    
+    <p class="description">Envie-nos suas dúvidas, sugestões ou reclamações. Nossa equipe irá responder sua mensagem o mais breve possível.</p>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="email" maxlength="100" placeholder="Informe email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="text" maxlength="100" placeholder="Informe nome" [(ngModel)]="name"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="text" maxlength="100" placeholder="Informe assunto" [(ngModel)]="subject"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text" style="padding-bottom: 5px;">
+      <ion-textarea rows="6" placeholder="Digite aqui sua mensagem..." [(ngModel)]="message"></ion-textarea>
+    </ion-item>
+
+    <div padding-bottom><button ion-button full class="ftc-center ftc-button" (click)="sendMessage()">Enviar</button></div>
+  </div>
+
+</ion-content>

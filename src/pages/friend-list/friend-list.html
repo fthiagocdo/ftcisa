@@ -1,0 +1,25 @@
+<ion-header>
+  <img src="{{ event.photo }}"/>
+  <p>{{ event.name }}</p>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <p class="description">Envie seu nome e de seus amigos para nossa Lista Amiga e tenha benefícios para este evento. Você pode enviar a quantidade de nomes que quiser.</p>
+
+  <ion-item class="ftc-item-background-color ftc-input-text">
+    <ion-input type="text" maxlength="100" placeholder="Informe nome e sobrenome" [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item class="ftc-item-background-color ftc-input-text" style="padding-bottom: 5px;">
+    <ion-input type="email" maxlength="100" placeholder="Informe email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <div><button ion-button full class="ftc-center ftc-button" (click)="addNameInFriendList()">Enviar</button></div>
+  
+</ion-content>

@@ -1,0 +1,62 @@
+<ion-header>
+  <img src="{{ event.photo }}"/>
+  <p>{{ event.name }}</p>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons end> 
+      <button (click)="editEvent()"><ion-icon name="create"></ion-icon></button>
+      <button (click)="deleteEvent()"><ion-icon name="trash"></ion-icon></button> 
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <button ion-button icon-only clear class="ftc-center" (click)="shareEvent()">
+          <div>
+            <ion-icon name="share"></ion-icon>
+            <span>Compartilhar</span>
+          </div>
+        </button>
+      </ion-col>
+      
+      <ion-col col-3>
+        <button ion-button icon-only clear class="ftc-center" (click)="addEventToFavorites()">
+          <div>
+            <ion-icon name="star-outline"></ion-icon>
+            <span>Tenho Interesse</span>
+          </div>
+        </button>
+      </ion-col>
+
+      <ion-col col-3>
+        <button ion-button icon-only clear class="ftc-center" (click)="goToFriendList()">
+          <div>
+            <ion-icon name="list"></ion-icon>
+            <span>Lista Amiga</span>
+          </div>
+        </button>
+      </ion-col>
+
+      <ion-col col-3>
+        <button ion-button icon-only clear class="ftc-center" (click)="goToSendSongs()">
+          <div>
+            <ion-icon name="musical-notes"></ion-icon>
+            <span>Indique músicas</span>
+          </div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card class="ftc-card">
+    <ion-card-content>
+      <div><b>Local:</b> {{ event.place }} <a href="{{ event.address }}" target="_blank">(ver endereço)</a></div>
+      <div><b>Data:</b> {{ event.period }}</div>
+      <div [innerHTML]="description"></div>
+    </ion-card-content> 
+  </ion-card>
+</ion-content>

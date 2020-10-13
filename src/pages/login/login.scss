@@ -1,0 +1,44 @@
+page-login {
+    .ftc-panel {
+        background-color: black;
+        box-shadow: 0px 0px 8px 4px rgba(255, 0, 0, 0.219);
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+        height: 96%;
+    }
+
+    .ftc-panel p {
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    .ftc-panel p a {
+        @extend .ftc-primary-color;
+        font-size: 1.4rem;
+    }
+
+    .recover-password {
+        padding-bottom: 15px;
+    }
+
+    .recover-password a {
+        float: right;
+    }
+
+    .ftc-grid {
+        padding: 0px 0px 10px 0px;
+    }
+
+    .ftc-facebook-button .button {
+        @extend .facebook;
+        padding: 0px 5px 0px 0px;
+        border-radius: 10px;
+    }
+
+    .ftc-google-button .button {
+        @extend .google;
+        padding: 0px 0px 0px 5px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ title }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ftc-panel">
+
+    <ion-item class="ftc-item-background-color ftc-input-text" padding-top>
+      <ion-input type="text" maxlength="100" placeholder="Informe nome do evento" [(ngModel)]="name"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-textarea rows="6" placeholder="Informe descrição do evento" [(ngModel)]="description"></ion-textarea>
+    </ion-item>
+    
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="text" placeholder="Informe url da imagem do evento" [(ngModel)]="photo"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="text" maxlength="200" placeholder="Informe local do evento" [(ngModel)]="place"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="text" placeholder="Informe url do endereço do evento" [(ngModel)]="address"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-datetime displayFormat="DD/MM/YYYY" placeholder="Informe data do evento" [(ngModel)]="date"></ion-datetime>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text">
+      <ion-input type="text" maxlength="100" placeholder="Informe período de duração do evento" [(ngModel)]="period"></ion-input>
+    </ion-item>
+
+    <ion-item class="ftc-item-background-color ftc-input-text" style="padding-bottom: 5px;">
+      <ion-input type="text" placeholder="Informe url de compartilhamento" [(ngModel)]="url"></ion-input>
+    </ion-item>
+
+    <div padding-bottom><button ion-button full class="ftc-center ftc-button" (click)="confimEvent()">Confirmar</button></div>
+  </div>
+
+</ion-content>

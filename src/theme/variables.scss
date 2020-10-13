@@ -86,3 +86,11 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+@font-face {
+  font-family: 'PermanentMarker-Regular';
+  src: url('../assets/fonts/PermanentMarker-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+
+}
